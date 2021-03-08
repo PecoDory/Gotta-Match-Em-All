@@ -38,3 +38,12 @@
 
 **Fri**: Presentation.
 
+
+|   |Studying New Concepts|General(Axios Calls, ect.)|Writing Code|Styling|Total Hours Day| Total Hours Days|
+|---|---|---|---|---|---|---|
+|Mon|4 hours   |1 hour   |3 hours   |1 hour(initial)|9|9|
+|Tues|4 hours   |1 hour   |7 hours   |0 hours   |12|21|
+|Wed|2 hour(review)   |1 hour   |8 hours   |1 hour|12|33|
+|Thur|1 hour(review)   |1 hour   |4 hours   |5 hours|11|44|
+|Fri|PRESENTATION DAY|PRES DAY|PRES DAY|PRES DAY |PRES DAY|PRES DAY|
+
