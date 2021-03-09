@@ -1,0 +1,24 @@
+
+
+
+body {
+  color: rgb(27, 210, 223);
+  font-family: Pokemon Hollow;
+  background-color: steelblue;
+  display:grid;
+  grid-template-areas: 
+  "nav  nav  nav  nav"
+  "side body body side"
+  "side body body side"
+  "side body body side";
+}
+
+
+h1{
+  grid-area: body;
+  font-size: 60px;
+}
+h1::first-letter{
+  color:violet;
+  font-family: Pokemon Solid;
+}
