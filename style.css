@@ -1,24 +1,66 @@
 
-
+*{
+  margin:0;
+  padding:0;
+}
 
 body {
-  color: rgb(27, 210, 223);
+  color: rgb(98, 241, 141);
   font-family: Pokemon Hollow;
   background-color: steelblue;
   display:grid;
   grid-template-areas: 
   "nav  nav  nav  nav"
-  "side body body side"
-  "side body body side"
-  "side body body side";
+  "sidel body body sider"
+  "sidel body body sider"
+  "sidel body body sider"
+  "foot  foot foot foot";
+  grid-column-gap: 1.5em;
+  grid-template-rows: ;
+  grid-template-columns: .40fr 4fr 1fr;
+}
+body a{
+  text-decoration: none;
 }
 
+nav{
+  grid-area: nav;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: rgb(245, 241, 34);
+}
 
 h1{
   grid-area: body;
   font-size: 60px;
 }
 h1::first-letter{
-  color:violet;
+  color:rgb(215, 212, 245);
   font-family: Pokemon Solid;
+}
+
+#pokesideleft{
+grid-area: sidel;
+height:100vh;
+background: crimson;
+}
+#pokesideleft img{
+ height:100px;
+ width:100px;
+}
+
+#pokesideright{
+  grid-area: sider;
+  height: 100vh;
+  background: darkslateblue;
+}
+#pokesideright img{
+height:100px;
+width:100px;
+}
+footer{
+  grid-area: foot;
+  color: black;
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
 }
