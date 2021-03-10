@@ -7,15 +7,17 @@ body {
   color: rgb(98, 241, 141);
   font-family: Pokemon Hollow;
   background-color: steelblue;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJnc0x_Y9mXs2dFQX5aVJ8XeNR_A1wofr7g&usqp=CAU');
   display: grid;
   grid-template-areas:
-    "nav  nav  nav  nav"
+    "nav   nav  nav  nav"
+    "sidel head head sider"
     "sidel body body sider"
     "sidel body body sider"
     "sidel body body sider"
     "foot  foot foot foot";
   grid-column-gap: 1.5em;
-  grid-template-rows: ;
+  grid-template-rows:  ;
   grid-template-columns: 0.4fr 4fr 1fr;
 }
 body a {
@@ -30,11 +32,12 @@ nav {
 }
 
 h1 {
-  grid-area: body;
+  grid-area: head;
   font-size: 60px;
+
 }
 h1::first-letter {
-  color: rgb(215, 212, 245);
+  color: rgb(117, 108, 216);
   font-family: Pokemon Solid;
 }
 
@@ -60,10 +63,11 @@ h1::first-letter {
 
 .cardgrid {
   grid-area: body;
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
+  flex-wrap:wrap;
   height: 300px;
   width: 400px;
+
 }
 
 footer {

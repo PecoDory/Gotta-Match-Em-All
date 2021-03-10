@@ -15,8 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'pokemon-pics/ditto.png'
   },
     {
+      name: 'Ditto',
+      img: 'pokemon-pics/ditto.png'
+  },
+    {
       name: 'Charmander',
       img: 'pokemon-pics/charmander.png'
+  },
+    {
+      name: 'Charmander',
+      img: 'pokemon-pics/charmander.png'
+  },
+    {
+      name: 'Haunter',
+      img: 'pokemon-pics/haunter.png'
   },
     {
       name: 'Haunter',
@@ -27,8 +39,20 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'pokemon-pics/machop.png'
   },
     {
+      name: 'Machop',
+      img: 'pokemon-pics/machop.png'
+  },
+    {
       name: 'Eevee',
       img: 'pokemon-pics/eevee.png'
+  },
+    {
+      name: 'Eevee',
+      img: 'pokemon-pics/eevee.png'
+  },
+    {
+      name: 'Blastoise',
+      img: 'pokemon-pics/blastoise.png'
   },
     {
       name: 'Blastoise',
@@ -38,6 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cardGrid = document.querySelector('.cardgrid')
   
+
+  const pkmnFound = []
+
   function tallGrass() {
   for (let i = 0; i < wildPkmn.length; i++) {
     const card = document.createElement('img')
@@ -45,8 +72,19 @@ document.addEventListener('DOMContentLoaded', () => {
     card.setAttribute('data-id', i)
     // card.addEventListener('click', flipcard)
   cardGrid.appendChild(card)
-  }    
+    }    
+  }
+  
+  function encounter() {
+    const thatPokemon = this.getAttribute('data-id')
+    
 }
+
+
+
+
+
+
   tallGrass();
 
 
