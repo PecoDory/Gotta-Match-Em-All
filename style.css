@@ -1,63 +1,72 @@
-
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: rgb(98, 241, 141);
   font-family: Pokemon Hollow;
   background-color: steelblue;
-  display:grid;
-  grid-template-areas: 
-  "nav  nav  nav  nav"
-  "sidel body body sider"
-  "sidel body body sider"
-  "sidel body body sider"
-  "foot  foot foot foot";
+  display: grid;
+  grid-template-areas:
+    "nav  nav  nav  nav"
+    "sidel body body sider"
+    "sidel body body sider"
+    "sidel body body sider"
+    "foot  foot foot foot";
   grid-column-gap: 1.5em;
   grid-template-rows: ;
-  grid-template-columns: .40fr 4fr 1fr;
+  grid-template-columns: 0.4fr 4fr 1fr;
 }
-body a{
+body a {
   text-decoration: none;
+  background-image: grass_tile.png;
 }
 
-nav{
+nav {
   grid-area: nav;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background: rgb(245, 241, 34);
 }
 
-h1{
+h1 {
   grid-area: body;
   font-size: 60px;
 }
-h1::first-letter{
-  color:rgb(215, 212, 245);
+h1::first-letter {
+  color: rgb(215, 212, 245);
   font-family: Pokemon Solid;
 }
 
-#pokesideleft{
-grid-area: sidel;
-height:100vh;
-background: crimson;
+#pokesideleft {
+  grid-area: sidel;
+  height: 100vh;
+  background: crimson;
 }
-#pokesideleft img{
- height:100px;
- width:100px;
+#pokesideleft img {
+  height: 100px;
+  width: 100px;
 }
 
-#pokesideright{
+#pokesideright {
   grid-area: sider;
   height: 100vh;
   background: darkslateblue;
 }
-#pokesideright img{
-height:100px;
-width:100px;
+#pokesideright img {
+  height: 100px;
+  width: 100px;
 }
-footer{
+
+.cardgrid {
+  grid-area: body;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+
+footer {
   grid-area: foot;
   color: black;
   background-color: aliceblue;

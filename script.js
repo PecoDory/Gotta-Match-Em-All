@@ -5,6 +5,55 @@ let url = `https://pokeapi.co/api/v2/pokemon/machop`
 let pkmnLeft = document.querySelector('#pokesideleft')
 let pkmnRight = document.querySelector('#pokesideright')
 let pkmnBody = document.querySelector('#pkmnbody')
+let numCaught = document.querySelector('#numcaught')
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  let wildPkmn = [
+    {
+      name: 'Ditto',
+      img: 'pokemon-pics/ditto.png'
+  },
+    {
+      name: 'Charmander',
+      img: 'pokemon-pics/charmander.png'
+  },
+    {
+      name: 'Haunter',
+      img: 'pokemon-pics/haunter.png'
+  },
+    {
+      name: 'Machop',
+      img: 'pokemon-pics/machop.png'
+  },
+    {
+      name: 'Eevee',
+      img: 'pokemon-pics/eevee.png'
+  },
+    {
+      name: 'Blastoise',
+      img: 'pokemon-pics/blastoise.png'
+  }
+]
+
+  const cardGrid = document.querySelector('.cardgrid')
+  
+  function tallGrass() {
+  for (let i = 0; i < wildPkmn.length; i++) {
+    const card = document.createElement('img')
+    card.setAttribute('src', 'pokemon-pics/grasstiletwo.png')
+    card.setAttribute('data-id', i)
+    // card.addEventListener('click', flipcard)
+  cardGrid.appendChild(card)
+  }    
+}
+  tallGrass();
+
+
+
+
+})
+
 
 
 
@@ -28,4 +77,4 @@ function createPokeImage(pokeID){
   pkmnRight.append(pokeImage);
   pkmnRight.append(pokeImage);
 }
-createPokeImage()
+createPokeImage(151)
