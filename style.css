@@ -46,7 +46,6 @@ nav {
 h1 {
   font-size: 60px;
   font-family: Pokemon Hollow;
-  background-color: cadetblue;
 }
 
 h1::first-letter {
@@ -59,7 +58,7 @@ h2 {
 
 #pokesideleft {
   grid-area: sidel;
-  height: 100vw;
+  height: 75vw;
   background: crimson;
 }
 #pokesideleft img {
@@ -70,8 +69,9 @@ h2 {
 
 #pokesideright {
   grid-area: sider;
-  height: 100vw;
-  background: rgb(39, 24, 138);
+  height: 75vw;
+  background-color: rgb(39, 24, 138, .75);
+  /* background-image: url("img_tree.gif"), url("paper.gif"); */
 }
 #pokesideright img {
   height: 100px;
@@ -81,16 +81,26 @@ h2 {
 
 .cardgrid {
   grid-area: body;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   height: 300px;
   width: 400px;
 }
+
+.cardgrid img{
+padding: 5px 5px 5px 5px;
+}
+body p{
+  text-align: center;
+  padding bottom
+}
 #numcaught {
   grid-area: mess;
+  text-align: center;
 }
 #congrats {
   grid-area: mess;
+  text-align:center;
 }
 footer {
   grid-area: foot;
@@ -110,5 +120,10 @@ footer div {
   height: 25px;
   width: 30px;
   /* padding-top: 5px; */
-  padding-right: 15px;
+  padding-left: 494.5px;
+}
+#pikachutoo {
+  height:25px;
+  width: 30px;
+  padding-right: 10px;
 }
