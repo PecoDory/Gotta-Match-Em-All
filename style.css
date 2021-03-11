@@ -1,79 +1,114 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 body {
   color: rgb(98, 241, 141);
-  font-family: Pokemon Hollow;
-  background-color: steelblue;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJnc0x_Y9mXs2dFQX5aVJ8XeNR_A1wofr7g&usqp=CAU');
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJnc0x_Y9mXs2dFQX5aVJ8XeNR_A1wofr7g&usqp=CAU");
   display: grid;
   grid-template-areas:
     "nav   nav  nav  nav"
     "sidel head head sider"
     "sidel body body sider"
-    "sidel body body sider"
-    "sidel body body sider"
+    "sidel mess mess sider"
     "foot  foot foot foot";
   grid-column-gap: 1.5em;
-  grid-template-rows:  ;
-  grid-template-columns: 0.4fr 4fr 1fr;
+  grid-template-rows: 25px 0.3fr fr 25px;
+  grid-template-columns: 0.55fr 4fr 1fr;
 }
 body a {
   text-decoration: none;
-  background-image: grass_tile.png;
 }
 
 nav {
   grid-area: nav;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background: rgb(245, 241, 34);
+  text-align: center;
+  background: rgb(245, 241, 34, 0.75);
+  padding-top: 6px;
+}
+
+#pkmnbody {
+  grid-area: body;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+#header {
+  grid-area: head;
+  text-align: center;
+  padding-top: 75px;
 }
 
 h1 {
-  grid-area: head;
   font-size: 60px;
-
+  font-family: Pokemon Hollow;
+  background-color: cadetblue;
 }
+
 h1::first-letter {
   color: rgb(117, 108, 216);
-  font-family: Pokemon Solid;
+  font-size: 100px;
+}
+
+h2 {
 }
 
 #pokesideleft {
   grid-area: sidel;
-  height: 100vh;
+  height: 100vw;
   background: crimson;
 }
 #pokesideleft img {
   height: 100px;
   width: 100px;
+  padding-top: 50vh;
 }
 
 #pokesideright {
   grid-area: sider;
-  height: 100vh;
-  background: darkslateblue;
+  height: 100vw;
+  background: rgb(39, 24, 138);
 }
 #pokesideright img {
   height: 100px;
   width: 100px;
+  padding-top: 50vh;
 }
 
 .cardgrid {
   grid-area: body;
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   height: 300px;
   width: 400px;
-
 }
-
+#numcaught {
+  grid-area: mess;
+}
+#congrats {
+  grid-area: mess;
+}
 footer {
   grid-area: foot;
   color: black;
   background-color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
-  height: 40px;
+  height: max-content;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+footer div {
+  padding-top: 5px;
+}
+#pikachu {
+  height: 25px;
+  width: 30px;
+  /* padding-top: 5px; */
+  padding-right: 15px;
 }

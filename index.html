@@ -7,34 +7,39 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="script.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/movies-3/32/pokemon-movie-cinema-ball-512.png">
+  <link rel="shortcut icon" href="https://img.pngio.com/gaming-pokeball-pokemon-icon-pokeball-outline-512_512.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<nav>
-  <a href="https://25.pokemon.com/en-us/">POKEMON 25</a>
-</nav>
 
-<div id="pkmnbody">
-  <h1>Gotta Match 'Em All ! !</h1>
-  
+  <nav>
+    <a href="https://25.pokemon.com/en-us/" target="_blank">POKEMON 25</a>
+  </nav>
+  <div id="header">
+    <h2>"There's something in the Tall Grass!"</h2>
+    <h1>Gotta Match 'Em All ! !</h1>
+    </div>
 
-  <div class="cardgrid">
+  <div id="pkmnbody">
+    <div class="cardgrid"></div>
   </div>
-<h3>You've caught <span id="numcaught"></span>Pokémon!</h3>
+<p>
+  <span id="numcaught"></span>
+  <span id="congrats"></span>
 
-</div>
 
+  <button value="Refresh" onclick="location.href=location.href"></button>
+</p>
   <div id="pokesideleft">
-<img id="machop" src="http://static.pokemonpets.com/images/monsters-images-800-800/2066-Shiny-Machop.png" alt="Shiny Machop">
+    <img id="machop" src="http://static.pokemonpets.com/images/monsters-images-800-800/2066-Shiny-Machop.png" alt="Shiny Machop">
   </div>
-
-<div id="pokesideright">
-</div>
+  <div id="pokesideright">
+  </div>
 
 <footer>
-  Heya
-</footer>
-  
+  <div>© '98 GAME FREAK, inc.</div>  <img id="pikachu" src="https://lordlibidan.com/wp-content/uploads/2019/03/Running-Pikachu-GIF.gif" alt="Pikachu Running"><img id="pikachu" src="https://lordlibidan.com/wp-content/uploads/2019/03/Running-Pikachu-GIF.gif" alt="Pikachu Running">
+</footer>  
 </body>
 </html>
