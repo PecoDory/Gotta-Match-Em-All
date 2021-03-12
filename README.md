@@ -1,5 +1,9 @@
 # Gotta-Match-Em-All!
 
+# [Surge-Hosted](http://match-em-all.surge.sh/)
+
+# [Github-Hosted](https://pecodory.github.io/Gotta-Match-Em-All/)
+
 ![alt text](https://static.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest/scale-to-width-down/340?cb=20140520015336)
 
 - This application will test and train your short-term memory using **Pokémon**, celebrating the 25th anniversary of the franchise! In it, you'll need to flip a card in a grid of cards, then another. If those are the same, you keep the set, if not, they flip back over, and you try another two, _ hopefully! _ remembering where the last two were. You'll win once you've matched all pairs!
@@ -45,6 +49,3 @@
 | Wed  | 2 hours(review)       | 1 hour                     | 8 hours      | 1 hour          | 12              | 33               |
 | Thur | 1 hour(review)        | 1 hour                     | 4 hours      | 5 hours         | 11              | 44               |
 | Fri  | PRESENTATION DAY      | PRES DAY                   | PRES DAY     | PRES DAY        | PRES DAY        | PRES DAY         |
-
-
-# [MY SITE](http://match-em-all.surge.sh/)
