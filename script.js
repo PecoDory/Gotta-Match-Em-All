@@ -8,6 +8,9 @@ let pkmnBody = document.querySelector('#pkmnbody')
 let numCaught = document.querySelector('#numcaught')
 let congrats = document.querySelector('#congrats')
 let button = document.querySelector('#buy-pokeballs')
+let url = `https://pokeapi.co/api/v2/pokemon/`
+
+
 
   const wildPkmn = [
     // { name: 'Ditto', img: 'pokemon-pics/ditto.png' }, { name: 'Ditto', img: 'pokemon-pics/ditto.png' },
@@ -25,12 +28,7 @@ let button = document.querySelector('#buy-pokeballs')
 
 
 
-  
-
-
-  
-  
-  const cardGrid = document.querySelector('.cardgrid')
+const cardGrid = document.querySelector('.cardgrid')
   
   
   
@@ -71,11 +69,11 @@ function checkCaughtPkmn() {
     }
     pokemonFound = []
     pokemonFoundData = []
-    numCaught.textContent = `You've caught ${pokemonCaught.length} Pokémon!` 
+    numCaught.textContent = `You've caught ${pokemonCaught.length} POKÉMON!` 
     if (pokemonCaught.length === wildPkmn.length / 2)
-      congrats.textContent = "Uh oh! All out of Pokéball's! Go Get some more!"
-    
-    // removeEventListener ("click", encounter)
+      congrats.textContent = "Uh oh! All out of Pokéballs! Go Get some more!"
+      if (pokemonCaught.length === wildPkmn.length / 2)
+      button.textContent = "Enter Poké-shop!!"
   }
     
     
@@ -94,16 +92,13 @@ function encounter() {
   
   
 
-
-let url = `https://pokeapi.co/api/v2/pokemon/`
-
 async function getPokemon() {
   try {
     console.log('getPokemon')
     for (let i = 1; i <= 6; i++) {
       console.log(`${url}${i}`)
       //make random num
-      let randomPkmn = getRandomNumber(150)
+      let randomPkmn = getRandomNumber(151)
       console.log(randomPkmn)
       //api call for pkmn 
       const response = await axios.get(`${url}${randomPkmn}`);

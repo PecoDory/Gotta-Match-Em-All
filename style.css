@@ -16,7 +16,7 @@ body {
     "foot  foot foot foot";
   grid-column-gap: 1.5em;
   grid-template-rows: 25px 0.3fr fr 25px;
-  grid-template-columns: 0.55fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 body a {
   text-decoration: none;
@@ -28,6 +28,13 @@ nav {
   text-align: center;
   background: rgb(245, 241, 34, 0.75);
   padding-top: 6px;
+}
+nav a {
+  transition: all 0.3s ease 0s;
+}
+
+nav a:hover{
+  color:aliceblue;
 }
 
 #pkmnbody {
@@ -43,46 +50,53 @@ nav {
   padding-top: 75px;
 }
 
-h1 {
+h1 a{
   font-size: 60px;
   font-family: Pokemon Hollow;
+  transition: all .8s ease 0s;
+  color: rgb(252, 255, 240);
+
+}
+h1 a:hover{
+  color: rgb(252, 255, 43);
 }
 
 h1::first-letter {
-  color: rgb(117, 108, 216);
+  color: rgba(248, 252, 7, 0.7);
   font-size: 100px;
-}
-
-h2 {
 }
 
 #pokesideleft {
   grid-area: sidel;
-  height: 75vw;
-  background: crimson;
+  height: 100%;
+  width:190px;
+  background: rgb(220, 20, 60, .75);
 }
-#pokesideleft img {
-  height: 100px;
-  width: 100px;
+#charizard {
+  grid-area: sidel;
+  /* display:inline-block; */
+  height: 200px;
+  width: 200px;
   padding-top: 50vh;
 }
 
 #pokesideright {
   grid-area: sider;
-  height: 75vw;
+  height: 100%;
   background-color: rgb(39, 24, 138, .75);
-  /* background-image: url("img_tree.gif"), url("paper.gif"); */
 }
+
 #pokesideright img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   padding-top: 50vh;
+  padding-right:0;
 }
 
 .cardgrid {
   grid-area: body;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   height: 300px;
   width: 400px;
 }
@@ -90,9 +104,36 @@ h2 {
 .cardgrid img{
 padding: 5px 5px 5px 5px;
 }
+
+.cardgrid img:hover {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
+
+
+
 body p{
   text-align: center;
-  padding bottom
+  padding-bottom: 25px;
+  padding-left:20%;
 }
 #numcaught {
   grid-area: mess;
@@ -101,6 +142,9 @@ body p{
 #congrats {
   grid-area: mess;
   text-align:center;
+};
+#buy-pokeballs{
+  padding: 2px 2px 2px 2px
 }
 footer {
   grid-area: foot;
@@ -108,10 +152,11 @@ footer {
   background-color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
   height: max-content;
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding-left: 5px;
+  width: 100vw;
+  margin: 0 auto;
 }
 footer div {
   padding-top: 5px;
@@ -119,11 +164,16 @@ footer div {
 #pikachu {
   height: 25px;
   width: 30px;
-  /* padding-top: 5px; */
-  padding-left: 494.5px;
+  padding-left: 600px;
 }
 #pikachutoo {
   height:25px;
   width: 30px;
-  padding-right: 10px;
+  padding-right: 3px;
 }
+#pikachuthree{
+  height:25px;
+  width: 30px;
+  padding-right: 16px;
+}
+
