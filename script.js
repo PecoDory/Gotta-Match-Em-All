@@ -74,6 +74,7 @@ function checkCaughtPkmn() {
       congrats.textContent = "Uh oh! All out of Pokéballs! Go Get some more!"
       if (pokemonCaught.length === wildPkmn.length / 2)
       button.textContent = "Enter Poké-shop!!"
+    // removeEventListener ("click", encounter)
   }
     
     
